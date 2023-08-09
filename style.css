@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Inter&display=swap');
+
+.bgcolor {
+    background: #f5f5f5;
+}
+
+.hero-header {
+    width: 90%;
+    height: inherit;
+    padding: 5%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    border-color: black;
+    justify-content: space-between;
+}
+
+.hero-header-text {
+    margin-bottom: 5%;
+}
+
+.hero-header-text h3 {
+    font-family: Inter;
+    font-size: 30px;
+    text-align: left;
+}
+
+.hero-header-text p {
+    font-family: Inter;
+    font-size: 11px;
+
+}
+
+.hero-header-image-box {
+    width: 50%;
+    height: inherit;
+    border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%;
+}
+
+.hero-header-image-box img {
+    width: 80%;
+}
+
+#hero-btn button:hover {
+    padding: 2%;
+    font-family: Inter;
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: 0.5s;
+    border: none;
+    border-radius: 5px;
+}
+
+#hero-btn button {
+    padding: 2%;
+    font-family: Inter;
+    border-color: black;
+    font-size: 12px;
+}
+
+/* hero header */
+
+
+.feature-section {
+    padding: 5%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.feature-section-image-box {
+    width: 50%;
+    background: #000;
+    height: inherit;
+    border-radius: 10px;
+
+}
+
+.feature-section-image-box img {
+    width: 80%;
+}
+
+.feature-section-text {
+    margin-bottom: 5%;
+}
+
+.feature-section-text h3 {
+    font-family: Inter;
+    font-size: 30px;
+    text-align: left;
+}
+
+.feature-section-text p {
+    font-family: Inter;
+    font-size: 11px;
+    text-align: left;
+}
+
+.feature-section-experience {
+    display: flex;
+}
+
+.feature-expertise i {
+    background: #dbd4d4;
+    border-radius: 50%;
+    padding: 3%;
+    font-size: 30px;
+}
+
+.feature-innovation i {
+    background: #dbd4d4;
+    border-radius: 50%;
+    padding: 3%;
+    font-size: 30px;
+}
+
+#feature-btn button {
+    padding: 2%;
+    font-family: Inter;
+    border-color: black;
+    font-size: 11px;
+}
+
+#feature-btn button:hover {
+    padding: 2%;
+    font-family: Inter;
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: 0.5s;
+    border: none;
+    border-radius: 5px;
+}
+
+/*  */
+
+.benefit-section {
+    display: flex;
+    padding: 5%;
+}
+
+.benefit-section-image-box {
+    width: 50%;
+    background: #000;
+    height: inherit;
+    border-radius: 10px;
+
+}
+
+.benefit-section-offer {
+    display: flex;
+}
+
+.benefit-section-text {
+    margin-bottom: 5%;
+}
+
+.benefit-section-text h3 {
+    font-family: Inter;
+    font-size: 30px;
+    text-align: left;
+}
+
+.benefit-section-text p {
+    font-family: Inter;
+    font-size: 11px;
+    text-align: left;
+}
+
+/*  */
+
+
+.logo-list-section {
+    width: screen;
+    height: inherit;
+    padding: 2%;
+}
+
+.logo-list-section p {
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: Inter;
+    font-size: bold 12px;
+    font-style: italic;
+}
+
+.Logo-Card {
+    width: 10%;
+    text-align: center;
+    color: #000000;
+    background-color: #baacac;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    flex: 0 0 10%;
+    object-fit: contain;
+}
+
+.swiper-wrapper-logo {
+    display: flex;
+    animation: slide 15s linear infinite;
+    gap: 10%;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.Cta-section {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.Cta-text p {
+    font-family: Inter;
+    font-size: 12px;
+}
+
+.Cta-section h3 {
+    font-family: Inter;
+    font-size: 30px;
+
+}
+
+
+#Cta-btn button {
+    padding: 2%;
+    font-family: Inter;
+    border-color: black;
+    font-size: 11px;
+}
+
+#Cta-btn button:hover {
+    padding: 2%;
+    font-family: Inter;
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: 0.5s;
+    border: none;
+    border-radius: 5px;
+}
+
+#Cta-btn label {
+    font-family: Inter;
+    font-size: 9px;
+
+}
+
+#Cta-btn input {
+    height: 38px;
+}
+
+.newsletter-section {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 580px screen */
+
+@media screen  and (max-width: 580px) {
+    .hero-header {
+        display: block;
+    }
+
+    .feature-section {
+        display: block;
+    }
+
+    .Cta-section {
+        display: block;
+    }
+
+    .newsletter-section {
+        display: block;
+    }
+
+    .feature-section-image-box {
+        width: 100%;
+    }
+
+    .hero-header-image-box {
+        width: 100%;
+    }
+
+    .benefit-section {
+        display: block;
+    }
+
+    .benefit-section-image-box {
+        width: 100%;
+    }
+
+}
