@@ -253,13 +253,32 @@
 }
 
 #Cta-btn input {
-    height: 38px;
+    padding: 2%;
 }
 
 .newsletter-section {
     padding: 5%;
     display: flex;
     justify-content: space-between;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.footer-section ul {
+    list-style: none;
+    display: flex;
+    gap: 5%;
+    width: 50%;
+}
+
+.footer-form input  {
+    width: 100%;
+    height: inherit;
+    padding: 2%;
 }
 
 /* 580px screen */
@@ -278,6 +297,10 @@
     }
 
     .newsletter-section {
+        display: block;
+    }
+
+    .footer-section {
         display: block;
     }
 
