@@ -413,4 +413,8 @@
         text-align: center;
     }
 
+    .feature-section-experience {
+        display: block;
+    }
+
 }
