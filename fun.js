@@ -14,7 +14,7 @@ function animateValue(obj, start, end, duration){
 }
 
 const obj = document.getElementById("value");
-animateValue(obj, 0, 50, 5000);
+animateValue(obj, 0, 50, 5700);
 
 function animateValue(obk, start, end, duration){
     let startTimestamp = null;
@@ -32,4 +32,4 @@ function animateValue(obk, start, end, duration){
 }
 
 const obk = document.getElementById("value-second");
-animateValue(obk, 0, 50, 5000);
+animateValue(obk, 0, 50, 5800);

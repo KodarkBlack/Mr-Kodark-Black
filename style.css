@@ -65,6 +65,7 @@
     padding: 5%;
     justify-content: space-between;
     display: flex;
+    gap: 5%;
 }
 
 .feature-section-image-box {
@@ -135,6 +136,8 @@
 .benefit-section {
     display: flex;
     padding: 5%;
+    justify-content: space-between;
+    gap: 5%;
 }
 
 .benefit-section-image-box {
@@ -292,6 +295,36 @@
 
     .benefit-section-image-box {
         width: 100%;
+    }
+
+    #feature-btn button:hover {
+        padding: 2%;
+        font-family: Inter;
+        color: #FFFFFF;
+        background-color: #000000;
+        transition: 0.5s;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #Cta-btn button:hover {
+        padding: 2%;
+        font-family: Inter;
+        color: #FFFFFF;
+        background-color: #000000;
+        transition: 0.5s;
+        border: none;
+        border-radius: 5px;
+    }
+
+    #hero-btn button:hover {
+        padding: 2%;
+        font-family: Inter;
+        color: #FFFFFF;
+        background-color: #000000;
+        transition: 0.5s;
+        border: none;
+        border-radius: 5px;
     }
 
 }

@@ -8,6 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -47,7 +48,7 @@
     </nav>
 
 
-    <main class="hero-header">
+    <main data-aos="fade-up" class="hero-header">
         <div class="hero-header-text">
             <h3>Experience <br> developer creating innovative solutions</h3>
             <p>With a passion for coding and a keen eyes for details, I specialize in developing user friendly website and applications.</p>
@@ -57,12 +58,12 @@
             </form>
         </div>
 
-        <img class="hero-header-image-box" src="assets/people-and-technology.svg" alt="">
+        <img data-aos="fade-down" class="hero-header-image-box" src="assets/people-and-technology.svg" alt="">
 
     </main>
 
 
-    <section class="feature-section">
+    <section data-aos="fade-up" class="feature-section">
         <div class="feature-section-text">
             <p>Experience</p>
             <h3>Crafting innovative solution to drive success</h3>
@@ -87,28 +88,28 @@
             </form>
         </div>
 
-        <img class="feature-section-image-box" src="assets/people-and-technology.svg" alt="">
+        <img data-aos="fade-down" class="feature-section-image-box" src="assets/people-and-technology.svg" alt="">
     </section>
 
-    <section class="benefit-section">
+    <section data-aos="fade-up" class="benefit-section">
         <div class="benefit-section-text">
             <h3>Experience the power of a of a skilled web developer for your Projects</h3>
             <p>Our developers bring expertise and creativity to deliver exceptional web development solution</p>
 
             <div class="benefit-section-offer">
                 <div>
-                    <h5 id="value"></h5>
+                    <h5 data-aos="zoom-in-up" id="value"></h5>
                     <p>get high-quality website that engage user and drive conversion</p>
                 </div>
 
                 <div>
-                    <h5 id="value-second"></h5>
+                    <h5 data-aos="zoom-in-up" id="value-second"></h5>
                     <p>Boost your online presence with our expert web development services</p>
                 </div>
             </div>
         </div>
 
-        <img class="benefit-section-image-box" src="assets/people-and-technology.svg" alt="">
+        <img data-aos="fade-down" class="benefit-section-image-box" src="assets/people-and-technology.svg" alt="">
     </section>
 
     <section class="logo-list-section">
@@ -126,10 +127,10 @@
         </div>
     </section>
 
-    <section class="Cta-section">
+    <section data-aos="zoom-out-up" class="Cta-section">
         <h3>Discover My work and <br> Skills</h3>
 
-        <div class="Cta-text">
+        <div data-aos="zoom-out-down" class="Cta-text">
             <p>Welcome to my Portfolio I am a skilled web developer with a passion for <br> creating innovative solutions</p>
             <form id="Cta-btn">
                 <button>View</button>
@@ -139,7 +140,7 @@
     </section>
 
 
-    <section class="newsletter-section">
+    <section data-aos="zoom-out-up" class="newsletter-section">
        <div>
             <h3>Stay updated with our newsletter</h3>
             <p>Get the latest industries insights and updates deliver to your inbox</p>
@@ -147,7 +148,7 @@
 
         <div class="Cta-text">
             <p>Welcome to my Portfolio I am a skilled web developer with a passion for <br> creating innovative solutions</p>
-            <form id="Cta-btn">
+            <form data-aos="zoom-out-down" id="Cta-btn">
                 <input type="email" name="" placeholder="Enter your email" id="">
                 <button type="submit">Sign Up</button>
                 <label for="Cta-btn">By Clicking sign up, you agree to our terms and conditions</label>
@@ -156,15 +157,19 @@
     </section>
 
     <footer>
-        
+
     </footer>
 
 
 
 
     <script src="fun.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
