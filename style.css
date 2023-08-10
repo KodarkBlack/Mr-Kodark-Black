@@ -364,7 +364,7 @@
         width: 100%;
     }
 
-    #feature-btn button:hover {
+    #feature-btn button {
         padding: 2%;
         font-family: Inter;
         color: #FFFFFF;
@@ -376,7 +376,7 @@
 
     }
 
-    #Cta-btn button:hover {
+    #Cta-btn button {
         padding: 2%;
         font-family: Inter;
         color: #FFFFFF;
@@ -388,7 +388,7 @@
 
     }
 
-    #hero-btn button:hover {
+    #hero-btn button {
         padding: 2%;
         font-family: Inter;
         color: #FFFFFF;
