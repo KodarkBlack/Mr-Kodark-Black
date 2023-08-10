@@ -373,6 +373,7 @@
         border: none;
         border-radius: 5px;
         width: 100%;
+        margin-bottom: 5%;
 
     }
 
@@ -385,6 +386,7 @@
         border: none;
         border-radius: 5px;
         width: 100%;
+        margin-bottom: 5%;
 
     }
 
@@ -397,6 +399,7 @@
         border: none;
         border-radius: 5px;
         width: 100%;
+        margin-bottom: 5%;
     }
 
     #value {
@@ -415,6 +418,18 @@
 
     .feature-section-experience {
         display: block;
+    }
+
+    .feature-expertise {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .feature-innovation {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
     }
 
 }
