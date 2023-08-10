@@ -20,7 +20,7 @@
 }
 
 .hero-header-text h3 {
-    font-family: Inter;
+    font-family: handjet;
     font-size: 30px;
     text-align: left;
 }
@@ -85,7 +85,7 @@
 }
 
 .feature-section-text h3 {
-    font-family: Inter;
+    font-family: handjet;
     font-size: 30px;
     text-align: left;
 }
@@ -152,12 +152,24 @@
     display: flex;
 }
 
+#value {
+    color: #192A51;
+    font-family: handjet;
+    font-size: 30px;
+}
+
+#value-second {
+    color: #192A51;
+    font-family: handjet;
+    font-size: 30px;
+}
+
 .benefit-section-text {
     margin-bottom: 5%;
 }
 
 .benefit-section-text h3 {
-    font-family: Inter;
+    font-family: handjet;
     font-size: 30px;
     text-align: left;
 }
@@ -198,16 +210,10 @@
 
 .swiper-wrapper-logo {
     display: flex;
-    animation: slide 15s linear infinite;
-    gap: 10%;
-    align-items: space-between;
     justify-content: space-between;
+    width: 100%;
 }
 
-@keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
 
 .Cta-section {
     padding: 5%;
@@ -223,7 +229,7 @@
 }
 
 .Cta-section h3 {
-    font-family: Inter;
+    font-family: handjet;
     font-size: 30px;
 
 }
@@ -262,23 +268,43 @@
     justify-content: space-between;
 }
 
+.stay-updated h3 {
+    font-family: handjet;
+    font-size: 30px;
+}
+
 .footer-section {
     display: flex;
     justify-content: space-between;
-    padding: 2%;
+    padding: 5%;
 }
 
 .footer-section ul {
     list-style: none;
     display: flex;
     gap: 5%;
-    width: 50%;
+    width: 100%;
+    font-family: Inter;
+    font-size: 15px;
+}
+
+.footer-form label {
+    font-family: Inter;
+    font-size: 15px;
 }
 
 .footer-form input  {
     width: 100%;
     height: inherit;
     padding: 2%;
+    margin-bottom: 5%;
+}
+
+.footer-form button {
+    padding: 2%;
+    font-family: Inter;
+    border-color: black;
+    font-size: 11px;
 }
 
 /* 580px screen */
@@ -301,6 +327,10 @@
     }
 
     .footer-section {
+        display: block;
+    }
+
+    .benefit-section-offer {
         display: block;
     }
 
@@ -328,6 +358,8 @@
         transition: 0.5s;
         border: none;
         border-radius: 5px;
+        width: 100%;
+
     }
 
     #Cta-btn button:hover {
@@ -338,6 +370,8 @@
         transition: 0.5s;
         border: none;
         border-radius: 5px;
+        width: 100%;
+
     }
 
     #hero-btn button:hover {
@@ -348,6 +382,21 @@
         transition: 0.5s;
         border: none;
         border-radius: 5px;
+        width: 100%;
+    }
+
+    #value {
+        color: #192A51;
+        font-family: handjet;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    #value-second {
+        color: #192A51;
+        font-family: handjet;
+        font-size: 30px;
+        text-align: center;
     }
 
 }
