@@ -198,20 +198,22 @@
 }
 
 .Logo-Card {
-    width: 10%;
     text-align: center;
+    padding: 10px;
     color: #000000;
-    background-color: #baacac;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #DBD4D4;
     border-radius: 5px;
     flex: 0 0 10%;
     object-fit: contain;
+    font-family: Inter;
+    font-size: 20px;
 }
 
 .swiper-wrapper-logo {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
 }
 
 
@@ -300,11 +302,23 @@
     margin-bottom: 5%;
 }
 
-.footer-form button {
+.footer-form button:hover {
     padding: 2%;
     font-family: Inter;
     border-color: black;
     font-size: 11px;
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+.footer-form button {
+    padding: 2%;
+    font-family: Inter;
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: 0.5s;
+    border: none;
+    border-radius: 5px;
 }
 
 /* 580px screen */
