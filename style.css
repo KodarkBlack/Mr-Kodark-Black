@@ -1,16 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Inter&display=swap');
 
 
-.navbar-toggler-part {
+.cv-btn {
+    font-family: Inter;
+    border-color: black;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cv-btn:hover {
+    font-family: Inter;
+    background-color: black;
+    color: #f5f5f5;
+    transition: 0.5s;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
     border: none;
-    background: #000;
+}
+
+.navbar-toggler-part {
     border-radius: 10px;
     transition: 0.5s;
+    background: #000000;
 }
+
+
 
 .navbar-toggler-part i {
     color: #FFFFFF;
     font-size: 40px;
+}
+
+.navbar-toggler-part:hover {
+    background-color: #192A51;
+    border: none;
 }
 
 
@@ -70,6 +95,7 @@
     font-family: Inter;
     border-color: black;
     font-size: 12px;
+    border-radius: 5px;
 }
 
 /* hero header */
@@ -133,6 +159,7 @@
     font-family: Inter;
     border-color: black;
     font-size: 11px;
+    border-radius: 5px;
 }
 
 #feature-btn button:hover {
@@ -257,6 +284,7 @@
     font-family: Inter;
     border-color: black;
     font-size: 11px;
+    border-radius: 5px;
 }
 
 #Cta-btn button:hover {
@@ -327,35 +355,10 @@
     padding: 3%;
     border-radius: 30%;
     border: none;
-    color: #000;
     transition: 0.2s;
 }
 
-/* .footer-form label {
-    font-family: Inter;
-    font-size: 15px;
-}
 
-.footer-form input  {
-    width: 100%;
-    height: inherit;
-    padding: 2%;
-    margin-bottom: 5%;
-}
-
-.footer-form button:hover {
-    background-color: #192A51;
-}
-
-.footer-form button {
-    padding: 2%;
-    font-family: Inter;
-    color: #FFFFFF;
-    background-color: #000000;
-    transition: 0.5s;
-    border: none;
-    border-radius: 5px;
-} */
 
 /* 580px screen */
 
