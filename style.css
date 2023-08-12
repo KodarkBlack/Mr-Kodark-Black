@@ -185,13 +185,13 @@
 .benefit-section-text h3 {
     font-family: handjet;
     font-size: 30px;
-    text-align: left;
+    text-align: center;
 }
 
 .benefit-section-text p {
     font-family: Inter;
     font-size: 11px;
-    text-align: left;
+    text-align: center;
 }
 
 /*  */
@@ -242,6 +242,7 @@
 .Cta-text p {
     font-family: Inter;
     font-size: 12px;
+    text-align: center;
 }
 
 .Cta-section h3 {
@@ -288,6 +289,14 @@
 .stay-updated h3 {
     font-family: handjet;
     font-size: 30px;
+    text-align: center;
+}
+
+
+.stay-updated p {
+    font-family: handjet;
+    font-size: 15px;
+    text-align: center;
 }
 
 .footer-section {
@@ -297,15 +306,32 @@
 }
 
 .footer-section ul {
-    list-style: none;
     display: flex;
-    gap: 5%;
     width: 100%;
     font-family: Inter;
-    font-size: 15px;
+    font-size: 25px;
+    justify-content: center;
+    gap: 10%;
 }
 
-.footer-form label {
+.footer-section ul i {
+    background-color: #000;
+    padding: 3%;
+    border: none;
+    border-radius: 50%;
+    color: #FFFFFF;
+}
+
+.footer-section ul i:hover {
+    background-color: #192A51;
+    padding: 3%;
+    border-radius: 30%;
+    border: none;
+    color: #000;
+    transition: 0.2s;
+}
+
+/* .footer-form label {
     font-family: Inter;
     font-size: 15px;
 }
@@ -329,7 +355,7 @@
     transition: 0.5s;
     border: none;
     border-radius: 5px;
-}
+} */
 
 /* 580px screen */
 
@@ -402,6 +428,19 @@
         width: 100%;
         margin-bottom: 5%;
 
+    }
+
+    #Cta-btn input {
+        padding: 2%;
+        margin-bottom: 5%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #Cta-btn label {
+        padding: 2%;
+        width: 100%;
+        text-align: center;
     }
 
     #Cta-btn button:hover {
