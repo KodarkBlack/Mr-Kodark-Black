@@ -36,10 +36,15 @@ animateValue(obk, 0, 50, 5800);
 
 
 const subform = document.getElementById("subform");
+const subBtn = document.getElementById("sub-btn");
+
 subform.addEventListener("submit", formSubmit);
 
-function formSubmit(e){
+function formSubmit(e) {
     e.preventDefault();
+    const button = subBtn;
+    button.textContent = "Subscribing...";
+
     const formData = new FormData(e.target);
 
     fetch("https://getform.io/f/7af0e2fa-abb4-47f8-b53c-448fea6f9c49", {
@@ -50,12 +55,15 @@ function formSubmit(e){
         },
     })
     .then(response => {
-        if(!response.ok) {
-            throw new Error(`An error occcured: ${response.statusText}`);
+        if (!response.ok) {
+            throw new Error(`An error occurred: ${response.statusText}`);
         }
         console.log(response);
     })
     .catch(error => {
         console.log(error);
+    })
+    .finally(() => {
+        button.textContent = "Subscribed";
     });
 }
