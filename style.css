@@ -350,15 +350,16 @@
     gap: 10%;
 }
 
-.footer-section ul i {
+.footer-section ul a {
     background-color: #000;
     padding: 3%;
     border: none;
     border-radius: 50%;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
-.footer-section ul i:hover {
+.footer-section ul a:hover {
     background-color: #192A51;
     padding: 3%;
     border-radius: 30%;
