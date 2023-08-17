@@ -33,3 +33,29 @@ function animateValue(obk, start, end, duration){
 
 const obk = document.getElementById("value-second");
 animateValue(obk, 0, 50, 5800);
+
+
+const subform = document.getElementById("subform");
+subform.addEventListener("submit", formSubmit);
+
+function formSubmit(e){
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    fetch("https://getform.io/f/7af0e2fa-abb4-47f8-b53c-448fea6f9c49", {
+        method: "POST",
+        body: formData,
+        headers: {
+            "Accept": "application/json",
+        },
+    })
+    .then(response => {
+        if(!response.ok) {
+            throw new Error(`An error occcured: ${response.statusText}`);
+        }
+        console.log(response);
+    })
+    .catch(error => {
+        console.log(error);
+    });
+}
