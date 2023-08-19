@@ -78,6 +78,7 @@
     width: 50%;
     height: inherit;
     border-radius: 31% 69% 23% 77% / 66% 18% 82% 34%;
+    transition: 0.10s ease;
 }
 
 .hero-header-image-box img {

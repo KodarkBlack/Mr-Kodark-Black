@@ -37,13 +37,19 @@ animateValue(obk, 0, 50, 5800);
 
 const subform = document.getElementById("subform");
 const subBtn = document.getElementById("sub-btn");
+let email= document.getElementById("email")
+
 
 subform.addEventListener("submit", formSubmit);
 
 function formSubmit(e) {
     e.preventDefault();
     const button = subBtn;
+    const email = email;
     button.textContent = "Subscribing...";
+    email.innerHTML = "You've done well"
+
+
 
     const formData = new FormData(e.target);
 
@@ -63,7 +69,10 @@ function formSubmit(e) {
     .catch(error => {
         console.log(error);
     })
+
     .finally(() => {
         button.textContent = "Subscribed";
+        email.textContent = "Go........"
+        
     });
 }
