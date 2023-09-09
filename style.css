@@ -308,13 +308,14 @@
 
 #Cta-btn label {
     font-family: Inter;
-    font-size: 9px;
+    font-size: 5px;
 
 }
 
 #Cta-btn input {
     padding: 2%;
     margin-bottom: 5%;
+    width: 100%;
 }
 
 .newsletter-section {
