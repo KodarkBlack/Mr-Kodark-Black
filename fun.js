@@ -93,3 +93,19 @@ function formSubmit(e) {
         emailInput.value = " "; // Clear the email input
     });
 }
+
+
+// Updated date and time
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the last modified date of the current page
+    var lastModifiedDate = new Date(document.lastModified);
+    
+    // Format the date and time
+    var options = { year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit" };
+    var formattedDate = lastModifiedDate.toLocaleDateString("en-US", options);
+    
+    // Display the formatted date and time
+    document.getElementById("last-updated").textContent = formattedDate;
+});
