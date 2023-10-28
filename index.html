@@ -53,9 +53,9 @@
         <div class="hero-header-text">
             <h3>Experience <br> developer creating innovative solutions</h3>
             <p>With a passion for coding and a keen eyes for details, I specialize in developing user friendly website and applications.</p>
+            <p class="timedate">Today makes it: <span id="experience_year_updated"> </span></p>
             <form id="hero-btn">
                 <button>Learn more</button>
-                <p class="timedate">Still got time: <span id="last-updated"></span></p>
             </form>
         </div>
 
@@ -114,7 +114,7 @@
     </section>
 
     <section class="logo-list-section">
-        <p>Tested and Trusted with these tech stacks</p>
+        <p>Tested and Trusted with these tech stacks, version control and cloud services</p>
 
         <div class="swiper-wrapper-logo ">
             <i class='bx bxl-javascript Logo-Card'>JAVASCRIPT</i>
@@ -125,11 +125,25 @@
 
             <i class='bx bxl-react Logo-Card'>REACT</i>
             
-            <i class='bx bxl-javascript Logo-Card'>NEXT</i>
+            <i class='bx bxl-javascript Logo-Card'>APPWRITE</i>
 
             <i class='bx bxl-git Logo-Card'>GIT</i>
 
+            <i class='bx bxl-git Logo-Card'>FIREBASE</i>
+
             <i class='bx bxl-github Logo-Card'>GITHUB</i>
+
+            <i class='bx bxl-git Logo-Card'>NETLIFY</i>
+
+            <i class='bx bxl-git Logo-Card'>VERCEL</i>
+
+            <i class='bx bxl-git Logo-Card'>TWILIO</i>
+
+            <i class='bx bxl-git Logo-Card'>SCSS</i>
+
+            <i class='bx bxl-git Logo-Card'>C</i>
+
+            <i class='bx bxl-git Logo-Card'>SHELL</i>
 
         </div>
     </section>
@@ -140,9 +154,21 @@
         <div data-aos="zoom-out-down" class="Cta-text">
             <p>Welcome to my Portfolio I am a skilled web developer with a passion for <br> creating innovative solutions</p>
             <form id="Cta-btn">
-                <button>View</button>
+                <button id="project-view">View</button>
                 <button>Contact</button>
             </form>
+        </div>
+    </section>
+
+    <section data-aos="zoom-in-up" class="project-skills-modal" style="display: none;" id="project-skills-modal">
+        <h3>These is my recent project showcasing my skills in different stacks and cloud services i have been working with.</h3>
+        <div class="" id="projects-container">
+            <div id="">
+                <img src="" alt="project overview">
+                <p id="project-name">name</p>
+                <p id="project-language">language</p>
+                <p id="project-categories">categories</p>
+            </div>
         </div>
     </section>
 
@@ -166,6 +192,8 @@
     <hr>
 
     <footer class="footer-section">
+        <p class="timedate">Today's Date is: <span id="last-updated"></span></p>
+
         <ul>
             <a href="https://github.com/KodarkBlack">
                 <i class="bx bxl-github"></i>

@@ -1,0 +1,58 @@
+{
+    "skills" : [
+        {
+            "images": "",
+            "name": "Acadasave",
+            "language": "javascript, html, css",
+            "categories": "Landing Page"
+        },
+        {
+            "images": "",
+            "name": "Yoruba Allowed",
+            "language": "javascript, html, css",
+            "categories": "Landing Page"
+        },
+        {
+            "images": "",
+            "name": "Detlify",
+            "language": "javascript, html, css",
+            "categories": "Landing Page"
+        },
+        {
+            "images": "",
+            "name": "OpenGPT",
+            "language": "javascript, html, css",
+            "categories": "Landing Page"
+        },
+        {
+            "images": "",
+            "name": "Ladeychen",
+            "language": "javascript, html, css",
+            "categories": "Ecommerce"
+        },
+        {
+            "images": "",
+            "name": "Jappy vet",
+            "language": "javascript, html, css, aos",
+            "categories": "Ecommerce"
+        },
+        {
+            "images": "",
+            "name": "Incorp Tech",
+            "language": "javascript, html, css",
+            "categories": "Landing Page"
+        },
+        {
+            "images": "",
+            "name": "Nura sound",
+            "language": "React + vite",
+            "categories": "Landing Page"
+        },
+        {
+            "images": "",
+            "name": "Slite",
+            "language": "React + vite",
+            "categories": "Landing Page"
+        }
+    ]
+}

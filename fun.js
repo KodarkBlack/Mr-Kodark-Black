@@ -90,7 +90,7 @@ function formSubmit(e) {
     })
     .finally(() => {
         button.textContent = "Subscribed";
-        emailInput.value = " "; // Clear the email input
+        email.value = " "; // Clear the email input
     });
 }
 
@@ -100,12 +100,74 @@ function formSubmit(e) {
 
 document.addEventListener("DOMContentLoaded", function () {
     // Get the last modified date of the current page
-    var lastModifiedDate = new Date(document.lastModified);
+    const lastModifiedDate = new Date(document.lastModified);
     
     // Format the date and time
-    var options = { year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit" };
-    var formattedDate = lastModifiedDate.toLocaleDateString("en-US", options);
+    const options = { year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit" };
+    const formattedDate = lastModifiedDate.toLocaleDateString("en-US", options);
     
     // Display the formatted date and time
     document.getElementById("last-updated").textContent = formattedDate;
 });
+
+const targetDate = new Date('2021-01-01');
+
+// Function to calculate experience and update UI
+function updateExperience() {
+    const currentDate = new Date();
+    const yearsOfExperience = currentDate.getFullYear() - targetDate.getFullYear();
+    document.getElementById('experience_year_updated').textContent = `${yearsOfExperience} Years Of Experience`;
+}
+
+// Update experience initially
+updateExperience();
+
+// Update experience every 24 hours (in milliseconds: 24 hours * 60 minutes * 60 seconds * 1000 milliseconds)
+setInterval(updateExperience, 24 * 60 * 60 * 1000);
+
+
+
+let projectViewBtn = document.getElementById('project-view');
+
+const projectSkillsModal = document.getElementById('project-skills-modal');
+
+projectViewBtn.addEventListener("click", function(e) {
+    e.preventDefault()
+    // projectSkillsModal.style.display = 'block';
+    if (projectSkillsModal.style.display === "none" || projectSkillsModal.style.display === "") {
+        projectSkillsModal.style.display = "block";
+    } else {
+        projectSkillsModal.style.display = "none";
+    }
+
+    fetch('projects.json')
+    .then(response => response.json())
+    .then(data => {
+        // Randomly select a project from the fetched JSON data
+        // var randomProjectIndex = Math.floor(Math.random() * data.skills.length);
+        // var randomProject = data.skills[randomProjectIndex];
+        data.forEach(project => {
+            const projectDiv = document.createElement('div');
+            projectDiv.classList.add('project')
+        })
+
+        // Populate the project details in the modal
+
+        projectDiv.innerHTML = `
+        <h3>${project.name}</h3>
+        <p>${project.language}</p>
+        <p>Categories: ${project.categories.join(', ')}</p>
+        
+        `;
+
+        const projectsContainer = document.getElementById('projects-container');
+        projectsContainer.appendChild(projectDiv);
+
+    })
+
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+

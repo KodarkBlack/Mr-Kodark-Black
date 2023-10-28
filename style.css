@@ -181,6 +181,14 @@
     border-radius: 5px;
 }
 
+
+#experience_year_updated {
+    background: #756575;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    -webkit-text-fill-color: #FFFFFF;
+}
 /*  */
 
 .benefit-section {
@@ -200,6 +208,7 @@
 
 .benefit-section-offer {
     display: flex;
+    justify-content: baseline;
 }
 
 #value {
@@ -250,13 +259,15 @@
 .Logo-Card {
     text-align: center;
     padding: 10px;
-    color: #000000;
+    color: #FFFFFF;
     border-radius: 5px;
     flex: 0 0 10%;
     object-fit: contain;
     font-family: handjet;
     font: bold;
     font-size: 20px;
+    background-color: #192A51;
+    margin-bottom: 2%;
 }
 
 .swiper-wrapper-logo {
@@ -316,6 +327,20 @@
     padding: 2%;
     margin-bottom: 5%;
     width: 100%;
+}
+
+.project-skills-modal {
+    padding: 2%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    background: #756575;
+}
+
+.project-skills-modal h3{
+    font-family: Inter;
+    font-size: 20px;
+    text-align: center;
 }
 
 .newsletter-section {
