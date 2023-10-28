@@ -14,7 +14,7 @@
 
 
 
-<body class="bgcolor">
+<body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler-part" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class='bx bx-chevrons-down bx-fade-up'></i>
@@ -53,13 +53,15 @@
         <div class="hero-header-text">
             <h3>Experience <br> developer creating innovative solutions</h3>
             <p>With a passion for coding and a keen eyes for details, I specialize in developing user friendly website and applications.</p>
-            <p class="timedate">Today makes it: <span id="experience_year_updated"> </span></p>
+            <p class="timedate">Today makes it:
+                 <span id="experience_year_updated"> </span>
+            </p>
             <form id="hero-btn">
                 <button>Learn more</button>
             </form>
         </div>
 
-        <img data-aos="fade-down" class="hero-header-image-box" src="assets/people-and-technology.svg" alt="">
+        <img data-aos="fade-down" id="stickyimage" class="hero-header-image-box" src="assets/people-and-technology.svg" alt="">
 
     </main>
 
@@ -125,25 +127,25 @@
 
             <i class='bx bxl-react Logo-Card'>REACT</i>
             
-            <i class='bx bxl-javascript Logo-Card'>APPWRITE</i>
+            <i class='bx bxl-appwrite Logo-Card'>APPWRITE</i>
 
             <i class='bx bxl-git Logo-Card'>GIT</i>
 
-            <i class='bx bxl-git Logo-Card'>FIREBASE</i>
+            <i class='bx bxl-firebase Logo-Card'>FIREBASE</i>
 
             <i class='bx bxl-github Logo-Card'>GITHUB</i>
 
-            <i class='bx bxl-git Logo-Card'>NETLIFY</i>
+            <i class='bx bxl-netlify Logo-Card'>NETLIFY</i>
 
-            <i class='bx bxl-git Logo-Card'>VERCEL</i>
+            <i class='bx bxl-vercel Logo-Card'>VERCEL</i>
 
-            <i class='bx bxl-git Logo-Card'>TWILIO</i>
+            <i class='bx bxl-twilio Logo-Card'>TWILIO</i>
 
-            <i class='bx bxl-git Logo-Card'>SCSS</i>
+            <i class='bx bxl-scss Logo-Card'>SCSS</i>
 
-            <i class='bx bxl-git Logo-Card'>C</i>
+            <i class='bx bxl-C Logo-Card'>C</i>
 
-            <i class='bx bxl-git Logo-Card'>SHELL</i>
+            <i class='bx bxl-shell Logo-Card'>SHELL</i>
 
         </div>
     </section>
@@ -164,10 +166,12 @@
         <h3>These is my recent project showcasing my skills in different stacks and cloud services i have been working with.</h3>
         <div class="" id="projects-container">
             <div id="">
-                <img src="" alt="project overview">
+                <img src="/assets/people-and-technology.svg" class="skills-img" alt="project overview">
+               <div class="skills-type">
                 <p id="project-name">name</p>
                 <p id="project-language">language</p>
                 <p id="project-categories">categories</p>
+               </div>
             </div>
         </div>
     </section>

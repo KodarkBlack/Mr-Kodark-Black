@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Inter&display=swap');
 
-
 .cv-btn {
     font-family: Inter;
     border-color: black;
@@ -272,9 +271,11 @@
 
 .swiper-wrapper-logo {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    overflow: scroll;
+    justify-content: space-around;
     align-items: center;
+    transition: transform .4s ease-in-out;
+    gap: .500rem;
 }
 
 
@@ -330,7 +331,11 @@
 }
 
 .project-skills-modal {
+    position: absolute;
+    z-index: 1;
     padding: 2%;
+    height: 50vh;
+    margin: 50px;
     justify-content: center;
     text-align: center;
     border-radius: 10px;
@@ -339,8 +344,32 @@
 
 .project-skills-modal h3{
     font-family: Inter;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
+}
+
+.skills-img {
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.skills-type {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: .600rem;
+}
+
+.skills-type p {
+    background: #000;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 8px;
 }
 
 .newsletter-section {
@@ -542,6 +571,11 @@
         display: grid;
         justify-content: center;
         justify-items: center;
+    }
+
+    .skills-img {
+        width: 100%;
+        margin-bottom: 10px;
     }
 
 }

@@ -143,9 +143,6 @@ projectViewBtn.addEventListener("click", function(e) {
     fetch('projects.json')
     .then(response => response.json())
     .then(data => {
-        // Randomly select a project from the fetched JSON data
-        // var randomProjectIndex = Math.floor(Math.random() * data.skills.length);
-        // var randomProject = data.skills[randomProjectIndex];
         data.forEach(project => {
             const projectDiv = document.createElement('div');
             projectDiv.classList.add('project')
@@ -169,5 +166,9 @@ projectViewBtn.addEventListener("click", function(e) {
         console.error('Error:', error);
     });
 });
+
+// the sticky image 
+
+const stickyimage = document.getElementById
 
 
